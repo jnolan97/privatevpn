@@ -1,0 +1,11 @@
+# Sample Netplan YAML Configuration
+
+# This is a basic DHCP configuration for an Ethernet device.
+
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0:
+      dhcp4: true  # Enable DHCP for IPv4
+      optional: true  # Mark the interface as optional
